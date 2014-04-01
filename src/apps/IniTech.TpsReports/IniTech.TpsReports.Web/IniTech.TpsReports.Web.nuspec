@@ -13,7 +13,7 @@
     <tags>initech tps report cover sheet generator application app</tags>
     <dependencies>
       <group>
-        <dependency id="IniTech.TpsReports.Core" version="[1.0.0)" />
+        <dependency id="IniTech.TpsReports.Core" />
       </group>
     </dependencies>
   </metadata>
