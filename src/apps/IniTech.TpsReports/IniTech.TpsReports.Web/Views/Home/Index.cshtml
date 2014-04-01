@@ -1,0 +1,18 @@
+﻿@model IniTech.TpsReports.Core.TpsReportCoverSheet
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Generate T.P.S. Report Cover Sheet</h2>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            
+            @Html.EditorFor(model => Model)
+            
+            <input type="submit" value="Generate cover sheet" class="btn btn-primary"/>
+        }
+    </div>
+</div>

@@ -1,0 +1,66 @@
+﻿@using IniTech.Framework.Formatting
+@model IniTech.TpsReports.Core.TpsReportCoverSheet
+@{
+    Layout = "";
+}
+
+<style>
+th { text-align: left; }
+</style>
+<center>
+    <img src="@Url.Content("~/Content/initech-logo.png")" />
+    <h1>T.P.S. REPORT</h1>
+    <h2><u>Cover Sheet</u></h2>
+    <hr />
+    <table border="0" cellspacing="0" cellpadding="2" align="center">
+        <tr>
+            <th>Prepared By:</th>
+            <td>@Model.PreparedBy</td>
+            <th>Prepared Date:</th>
+            <td>@DateFormatter.Format(Model.PreparedDate)</td>
+        </tr>
+        <tr>
+            <th>Device / Program Type:</th>
+            <td>@Model.DeviceProgramType</td>
+            <th>Product Code:</th>
+            <td>@Model.ProductCode</td>
+        </tr>
+        <tr>
+            <th>Customer:</th>
+            <td>@Model.Customer</td>
+            <th>Vendor:</th>
+            <td>@Model.Vendor</td>
+        </tr>
+        <tr>
+            <th>Due Date:</th>
+            <td>@DateFormatter.Format(Model.DueDate)</td>
+            <th>Test Date:</th>
+            <td>@DateFormatter.Format(Model.TestDate)</td>
+        </tr>
+        <tr>
+            <th>Target Run Date:</th>
+            <td>@DateFormatter.Format(Model.TargetRunDate)</td>
+            <th>Program Run Time:</th>
+            <td>@Model.ProgramRuntime</td>
+        </tr>
+        <tr>
+            <th>Reference Guide:</th>
+            <td>@Model.ReferenceGuide</td>
+            <th>Program Language:</th>
+            <td>@Model.ProgramLanguage</td>
+        </tr>
+        <tr>
+            <th>Number of Error Messages:</th>
+            <td>@Model.NumberOfErrorMessages</td>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <th colspan="4">Comments:</th>
+        </tr>
+        <tr>
+            <td colspan="4">@Model.Comments</td>
+        </tr>
+    </table>
+    <hr />
+    <h3>C O N F I D E N T I A L</h3>
+</center>
