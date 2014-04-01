@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <iconUrl>https://balliauw.blob.core.windows.net/public/initech.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>This version contains the initial drop of the IniTech Framework.</releaseNotes>
+    <copyright>Copyright IniTech 2014</copyright>
+    <tags>initech framework components shared</tags>
+  </metadata>
+</package>
